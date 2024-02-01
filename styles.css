@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-10px) scale(2);
+}
+
+.projects_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    background-color: #323377;
+}
+
+.title_intro {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+.title_name {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.projects_title_container {
+    margin-top: 2%;
+}
+
+.projects_title_container h2 {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0 5px black;
+}
+
+.projects_title_container h2::before,
+.projects_title_container h2::after {
+    content: '';
+    display: inline-block;
+    margin-left: 20px;
+    /* Set the left margin to 20 pixels */
+    margin-right: 20px;
+    /* Set the right margin to 20 pixels */
+    width: 4vw;
+    /* Adjust the width of the lines as needed */
+    height: 0.25vh;
+    /* Adjust the thickness of the lines as needed */
+    background-color: whitesmoke;
+    /* Adjust the color of the lines as needed */
+    vertical-align: middle;
+    box-shadow: 0 0 10px black;
+}
+
+/* make this media specific at some point */
+.projects_container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+}
+
+.project_block_container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.project_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.project_images {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project_info_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 2%;
+}
+
+.project_name {
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.project_name h2 {
+    margin: 0;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0 5px black;
+}
+
+.project_date {
+    width: 100%;
+    height: 2.5vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+.project_date h5 {
+    margin: 0;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0 5px black;
+}
+
+.project_description {
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.project_description p {
+    margin: 0;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1rem
+}
+
+.technologies_container {
+    display: flex;
+    height: auto;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 10px; /* Set the gap between items */
+    margin-top: 1.5%;
+}
+
+.technology_box {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    height: 3vh;
+    padding: 1%;
+}
+
+.technology_box p {
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+.project_link {
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    justify-content: center;
+    justify-items: center;
+    height: 100%; /* Set the height to 100% */
+    margin-top: 1.5%;
+    align-self: flex-start;
+}
+
+a.button {
+    display: inline-block; /* Change this line */
+    padding: 0.3em 1.2em;
+    margin: 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #4e87f1;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+
+a.button:hover {
+    background-color: #4054c6;
+}
+
+@media all and (max-width:30em) {
+    a.button {
+        display: block;
+    }
+}
+
+.buffer {
+    height: 20vh
+}
+
+
+
+
+
+
+
+
+/* projects_page
+projects_title_container
+projects_title
+projects_container
+project_block_container
+project_image_container
+project_info_container
+project_name
+project_date
+project_description
+project_link */
